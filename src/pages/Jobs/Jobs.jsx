@@ -2,7 +2,7 @@ import { useState } from "react";
 import { jobListings } from "./JobsListing";
 import { JobModal } from "./JobModal";
 import { JobCard } from "./JobCard";
-import "./Jobs.css";
+import "./jobs.css";
 const JobOpportunities = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentJob, setCurrentJob] = useState(null);
