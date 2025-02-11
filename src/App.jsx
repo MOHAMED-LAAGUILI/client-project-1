@@ -8,6 +8,7 @@ import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import Contact from "./pages/Contact";
 import References from "./pages/References";
+import Faqs from "./pages/Faqs";
 
 // Layout Component (Keeps Header & Footer for all pages)
 const Layout = () => (
@@ -47,6 +48,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           <Route path="references" element={<References />} />
+          <Route path="faqs" element={<Faqs />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

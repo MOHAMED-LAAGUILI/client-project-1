@@ -202,6 +202,13 @@ function Header() {
 JOB Opertunities
 </Link>
                     </li>
+                    <li>
+                      <Link
+                        to="/faqs"
+                        className="flex py-2 text-base font-medium text-body-color hover:text-dark lg:ml-12 lg:inline-flex dark:text-dark-6 dark:hover:text-white"
+                      >
+FAQs</Link>
+                    </li>
                   </ul>
                 </nav>
               </div>

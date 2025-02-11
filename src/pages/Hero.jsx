@@ -1,8 +1,19 @@
 import { Link } from "react-router-dom"
+import { useState } from 'react';
 
 function Hero() {
+  const [videoOpen, setVideoOpen] = useState(false);
+  const [videoSrc, setVideoSrc] = useState('');
+
+  const handleVideoClick = () => {
+    setVideoOpen(true);
+    setVideoSrc('https://www.youtube.com/embed/PdPdJEf5mKo?si=NfQ6i4Los-dTpGEr');
+  };
+
   return (
     <div>
+
+
      <div className="relative bg-white pb-[110px] pt-[60px] lg:pt-[50px] dark:bg-dark">
   <div className="container mx-auto">
     <div className="-mx-4 flex flex-wrap items-center">
@@ -116,6 +127,60 @@ function Hero() {
     </div>
   </div>
 </div>
+
+
+
+<section className="bg-white py-20 lg:py-[120px] dark:bg-dark">
+      <div className="container mx-auto">
+        <div className="-mx-4 flex flex-wrap justify-center">
+          <div className="w-full px-4 lg:w-10/12">
+            <div className="relative z-20 h-[300px] overflow-hidden rounded-lg md:h-[450px]">
+              <div className="absolute left-0 top-0 h-full w-full">
+                <img
+                  src="https://searchengineland.com/wp-content/seloads/2022/06/Shutterstock_1315381259.jpg"
+                  alt="image"
+                  className="h-full w-full object-cover object-center"
+                />
+              </div>
+              <div className="absolute left-0 top-0 z-10 flex h-full w-full items-center justify-center bg-primary bg-opacity-90">
+                <button
+                  onClick={handleVideoClick}
+                  className="absolute z-20 flex h-20 w-20 items-center justify-center rounded-full bg-white text-primary md:h-[100px] md:w-[100px] dark:bg-dark-2 dark:text-white"
+                >
+                  <span className="absolute right-0 top-0 z-[-1] h-full w-full animate-ping rounded-full bg-white bg-opacity-20 delay-300 duration-1000"></span>
+                  <svg
+                    width="23"
+                    height="27"
+                    viewBox="0 0 23 27"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="ml-1 fill-current"
+                  >
+                    <path
+                      d="M22.5 12.634C23.1667 13.0189 23.1667 13.9811 22.5 14.366L2.25 26.0574C1.58333 26.4423 0.750001 25.9611 0.750001 25.1913L0.750002 1.80866C0.750002 1.03886 1.58334 0.557731 2.25 0.942631L22.5 12.634Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              {videoOpen && (
+                <div className="absolute inset-0 bg-black bg-opacity-50 z-50">
+                  <iframe
+                    src={videoSrc}
+                    title="Video"
+                    width="100%"
+                    height="100%"
+                    frameBorder="0"
+                    allow="autoplay; encrypted-media"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
     </div>
   )

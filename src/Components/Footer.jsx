@@ -80,7 +80,7 @@ function Footer() {
             <div className="mt-12 text-center text-sm text-gray-500 dark:text-gray-400">
               <p>
                 Designed and developed by 
-                <br/><a href="https://www.yourwebsite.com" className="text-primary hover:underline">person 1</a>
+                <br/><a href="https://laaguili-dev.app.genez.io/" className="text-primary hover:underline">MOHAMED LAAGUILI</a>
               <br/>  <a href="https://www.yourwebsite.com" className="text-primary hover:underline">person 2</a>
                <br/> <a href="https://www.yourwebsite.com" className="text-primary hover:underline">person 3</a>.
               </p>
