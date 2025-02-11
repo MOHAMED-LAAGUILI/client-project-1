@@ -20,7 +20,7 @@ function Hero() {
           </p>
           <ul className="flex flex-wrap items-center">
             <li>
-              <Link to="/contact" className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-center text-base font-medium text-white hover:bg-blue-dark lg:px-7">
+              <Link to="/contact" className="inline-flex items-center justify-center rounded-md bg-green-dark px-6 py-3 text-center text-base font-medium text-white hover:bg-blue-dark lg:px-7">
                 Contact Us
               </Link>
             </li>

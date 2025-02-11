@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import Contact from "./pages/Contact";
+import References from "./pages/References";
 
 
 // Layout Component (Keeps Header & Footer for all pages)
@@ -28,6 +29,8 @@ function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<About/>} />
           <Route path="contact" element={<Contact/>} />
+          <Route path="references" element={<References/>} />
+
           <Route path="*" element={<NotFound/>} />
         </Route>
       </Routes>

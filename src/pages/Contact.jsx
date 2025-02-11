@@ -2,11 +2,14 @@
 function Contact() {
   return (
     <div>
-<section className="relative z-10 overflow-hidden bg-white py-20 lg:py-[120px] dark:bg-dark">
+      <section className="relative z-10 overflow-hidden bg-white py-20 lg:py-[120px] dark:bg-dark">
   <div className="container mx-auto">
+    
     <div className="-mx-4 flex flex-wrap lg:justify-between">
+        
       <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
         <div className="mb-12 max-w-[570px] lg:mb-0">
+            
           <span className="mb-4 block text-base font-semibold text-primary">
             Contact Us
           </span>
@@ -225,6 +228,17 @@ function Contact() {
     </div>
   </div>
 </section>
+<div className="w-full h-[500px] overflow-hidden relative">
+  <iframe
+    loading="lazy"
+    src="https://maps.google.com/maps?q=ARCHIVOM%20-%20B.P%205676%20%E2%80%93%20RABAT%2C%20Rabat&t=m&z=14&output=embed&iwloc=near"
+    title="ARCHIVOM - B.P 5676 – RABAT, Rabat"
+    aria-label="ARCHIVOM - B.P 5676 – RABAT, Rabat"
+    className="w-full h-[320px] border-0"
+    allowFullScreen
+  ></iframe>
+
+</div>
 
     </div>
   )

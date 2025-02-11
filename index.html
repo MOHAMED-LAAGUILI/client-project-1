@@ -1,14 +1,107 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
+
+    <title>Archivom</title>
+
+    <!-- Basic Meta -->
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <meta name="version" content="1" />
+  
+    <!-- Theme & Mobile Web App Meta -->
+    <meta name="theme-color" content="#219653" />
+    <meta name="msapplication-navbutton-color" content="#219653" />
+    <meta name="mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="mobile-web-app-capable" content="yes">
+  
+    <!-- SEO Meta Tags -->
+    <meta name="author" content="Archivom" />
+    <meta name="description"
+      content="Disposant d’une équipe doté d’une expérience de plus de 30 ans, Archivom est une société d’ingénierie et de services de « Gestion de Contenu d’Entreprise » ou en anglais « Entreprise Content Management », qui opère dans la gestion du patrimoine informationnel des entreprises." />
+    <meta name="keywords"
+      content="Archivom" />
+    <meta name="category" content="Business" />
+    <meta name="coverage" content="Worldwide" />
+    <meta name="distribution" content="Global" />
+    <meta name="rating" content="General" />
+    <meta name="topic" content="Business" />
+    <meta name="copyright" content="2025" />
+    <meta name="reply-to" content="contact@archivom.com" />
+    <meta name="owner" content="Archivom" />
+    <meta name="language" content="fr" />
+    <meta name="subject" content="Archivom" />
+  
+    <!-- Caching and Performance Meta -->
+    <meta http-equiv="Cache-Control" content="max-age=86400, public" />
+    <meta http-equiv="Expires" content="Fri, 10 Aug 2025 20:00:00 GMT" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="generator" content="https://genezio.com/" />
+  
+    <!-- Search Engine Bots -->
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="bingbot" content="index, follow" />
+    <link rel="canonical" href="https://laaguili-dev.app.genez.io" />
+  
+    <!-- Security Meta -->
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-Powered-By" content="Archivom" />
+  
+    <!-- Open Graph Meta for Social Media -->
+    <meta property="og:title" content="Archivom " />
+    <meta property="og:description"
+      content="Disposant d’une équipe doté d’une expérience de plus de 30 ans, Archivom est une société d’ingénierie et de services de « Gestion de Contenu d’Entreprise » ou en anglais « Entreprise Content Management », qui opère dans la gestion du patrimoine informationnel des entreprises." />
+    <meta property="og:image"
+      content="https://archivom.fr/wp-content/uploads/2023/04/lastArchivom-Logo-Couleur-_17_04_2019-2-1024x359.png" />
+    <meta property="og:url" content="https://laaguili-dev.app.genez.io/" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+    <meta property="og:site_name" content="archivom" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+  
+    <!-- Twitter Card Meta -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="https://archivom.fr/r" />
+    <meta name="twitter:description"
+      content="Disposant d’une équipe doté d’une expérience de plus de 30 ans, Archivom est une société d’ingénierie et de services de « Gestion de Contenu d’Entreprise » ou en anglais « Entreprise Content Management », qui opère dans la gestion du patrimoine informationnel des entreprises." />
+    <meta name="twitter:image"
+      content="https://archivom.fr/wp-content/uploads/2023/04/lastArchivom-Logo-Couleur-_17_04_2019-2-1024x359.png" />
+    <meta name="twitter:creator" content="@MohamedLaaguili" />
+  
+  
+    <!-- Favicons -->
+    <link rel="icon" href="https://archivom.fr/wp-content/uploads/2023/04/lastArchivom-Logo-Couleur-_17_04_2019-2-1024x359.png"
+      type="image/x-icon" />
+    <link rel="icon" type="image/png"
+      href="https://archivom.fr/wp-content/uploads/2023/04/lastArchivom-Logo-Couleur-_17_04_2019-2-1024x359.png" />
+    <link rel="apple-touch-icon"
+      href="https://archivom.fr/wp-content/uploads/2023/04/lastArchivom-Logo-Couleur-_17_04_2019-2-1024x359.png" />
+    <link rel="icon" sizes="16x16"
+      href="https://archivom.fr/wp-content/uploads/2023/04/lastArchivom-Logo-Couleur-_17_04_2019-2-1024x359.png" />
+    <link rel="icon" sizes="32x32"
+      href="https://archivom.fr/wp-content/uploads/2023/04/lastArchivom-Logo-Couleur-_17_04_2019-2-1024x359.png" />
+    <link rel="icon" sizes="48x48"
+      href="https://archivom.fr/wp-content/uploads/2023/04/lastArchivom-Logo-Couleur-_17_04_2019-2-1024x359.png" />
+    <link rel="icon" type="image/png" sizes="192x192"
+      href="https://archivom.fr/wp-content/uploads/2023/04/lastArchivom-Logo-Couleur-_17_04_2019-2-1024x359.png" />
+    <link rel="mask-icon" href="https://archivom.fr/wp-content/uploads/2023/04/lastArchivom-Logo-Couleur-_17_04_2019-2-1024x359.png"
+      color="#7002EE" />
+    <meta name="msapplication-TileColor" content="#7002EE" />
+    <meta name="msapplication-TileImage"
+      content="https://archivom.fr/wp-content/uploads/2023/04/lastArchivom-Logo-Couleur-_17_04_2019-2-1024x359.png" />
+  
+    <!--  Dark / LIGHT SWITCH -->
+    <link id="dark-theme-style" rel="stylesheet" />
+
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
-
   </body>
 </html>
