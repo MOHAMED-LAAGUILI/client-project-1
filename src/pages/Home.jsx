@@ -5,7 +5,8 @@ import Stats from "../Components/Stats";
 import Team from "../Components/Team";
 import What_we_offer from "../Components/What_we_offer";
 import { motion } from "framer-motion";
-import Layout from "../Components/layout/Layout";
+import Layout from "../layout/Layout";
+import Carousel from "../Components/Carousel";
 
 function Home() {
   const fadeInUp = {
@@ -16,6 +17,14 @@ function Home() {
 
   return (
     <Layout title={"Home"} description={"Main page"}>
+      <motion.div
+        {...fadeInUp}
+        transition={{ delay: 0.1 }}
+        whileInView={{ opacity: 1, y: 0 }}
+      >
+        <Carousel />
+      </motion.div>
+
       <motion.div
         {...fadeInUp}
         transition={{ delay: 0.2 }}

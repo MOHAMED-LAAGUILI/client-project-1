@@ -3,7 +3,7 @@ import { jobListings } from "./JobsListing";
 import { JobModal } from "./JobModal";
 import { JobCard } from "./JobCard";
 import "./jobs.css";
-import Layout from "../../Components/layout/Layout";
+import Layout from "../../layout/Layout";
 const JobOpportunities = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentJob, setCurrentJob] = useState(null);

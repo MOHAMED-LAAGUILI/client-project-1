@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Layout from "../Components/layout/Layout";
+import Layout from "../layout/Layout";
 
 function Faqs() {
   const [openFaq1, setOpenFaq1] = useState(false);

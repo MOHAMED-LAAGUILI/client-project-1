@@ -3,10 +3,9 @@ import { Helmet, HelmetProvider } from "react-helmet-async"; // Import Helmet an
 import Header from "./Header";
 import Footer from "./Footer";
 import { FaPhone, FaWhatsapp } from "react-icons/fa";
-import Preloader from "../Preloader";
 import { useEffect, useState } from "react";
-import logo from "../../assets/images/logo.png"
-
+import logo from "../assets/images/logo.png";
+import Preloader from './../Components/Preloader';
 
 export default function Layout({
   children,
@@ -75,14 +74,8 @@ export default function Layout({
 
         {/*   <!-- Open Graph Meta for Social Media --> */}
         <meta property="og:title" content="Archivom " />
-        <meta
-          property="og:description"
-          content={description}
-        />
-        <meta
-          property="og:image"
-          content={ogImage}
-        />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={ogImage} />
         <meta property="og:url" content="https://archivom.fr" />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="512" />
@@ -94,60 +87,20 @@ export default function Layout({
         {/*  <!--  Twitter Card Meta -->*/}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="https://archivom.fr" />
-        <meta
-          name="twitter:description"
-          content={description}
-        />
-        <meta
-          name={logo}
-        />
+        <meta name="twitter:description" content={description} />
+        <meta name={logo} />
         <meta name="twitter:creator" content={author} />
 
         {/*  <!--  Favicons -->*/}
-        <link
-          rel="icon"
-          href={favicon}
-          type="image/x-icon"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          href={favicon}
-        />
-        <link
-          rel="apple-touch-icon"
-          href={favicon}
-        />
-        <link
-          rel="icon"
-          sizes="16x16"
-          href={favicon}
-        />
-        <link
-          rel="icon"
-          sizes="32x32"
-          href={favicon}
-        />
-        <link
-          rel="icon"
-          sizes="48x48"
-          href={favicon}
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="192x192"
-          href={favicon}
-        />
-        <link
-          rel="mask-icon"
-          href={favicon}
-          color="#219653"
-        />
-        <meta
-          name="msapplication-TileImage"
-          href={favicon}
-        />
+        <link rel="icon" href={favicon} type="image/x-icon" />
+        <link rel="icon" type="image/png" href={favicon} />
+        <link rel="apple-touch-icon" href={favicon} />
+        <link rel="icon" sizes="16x16" href={favicon} />
+        <link rel="icon" sizes="32x32" href={favicon} />
+        <link rel="icon" sizes="48x48" href={favicon} />
+        <link rel="icon" type="image/png" sizes="192x192" href={favicon} />
+        <link rel="mask-icon" href={favicon} color="#219653" />
+        <meta name="msapplication-TileImage" href={favicon} />
 
         {/*  <!--  Dark / LIGHT SWITCH -->*/}
         <link id="dark-theme-style" rel="stylesheet" />
@@ -160,13 +113,27 @@ export default function Layout({
           content="black-translucent"
         />
         <meta name="mobile-web-app-capable" content="yes" />
+
+  
+ 
+        <script src="https://cdn.tailwindcss.com"></script>
+  <script
+    defer
+    src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+  ></script>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/tailgrids@2.1.0/plugin.min.js"></script>
+  <link
+    href="https://cdn.jsdelivr.net/npm/tailgrids@2.1.0/assets/css/tailwind.min.css"
+    rel="stylesheet"
+  />
       </Helmet>
 
       {/* Header */}
       <Header />
 
       {/* Main Content */}
-      <main style={{ minHeight: "79.5vh" }}>{children}</main>
+      <main>{children}</main>
 
       {/* Footer */}
       <Footer />
@@ -174,7 +141,7 @@ export default function Layout({
       <div className="fixed bottom-5 right-5 space-y-5 z-50">
         {/* WhatsApp Icon */}
         <a
-          href="https://web.whatsapp.com/send?phone=212661820000"
+          href="https://wa.me/212661820000"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -184,11 +151,7 @@ export default function Layout({
         </a>
 
         {/* Phone Icon */}
-        <a
-          href="tel:+212661820000"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="tel:+212661820000" target="_blank" rel="noopener noreferrer">
           <div className="bg-primary p-4 rounded-full shadow-lg hover:bg-blue-600 transition-all duration-300 flex items-center justify-center">
             <FaPhone size={30} color="white" />
           </div>

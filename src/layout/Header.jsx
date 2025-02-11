@@ -13,56 +13,58 @@ import {
   FaDochub,
   FaSuitcase,
   FaQuestion,
+  FaMapMarkerAlt,
 } from "react-icons/fa";
-import { FaAngleDown, FaMapLocation } from "react-icons/fa6";
+import { FaAngleDown } from "react-icons/fa6";
 
 function Header() {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const [showMegaMenu, setShowMegaMenu] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 backdrop-blur-md bg-white/70 dark:bg-dark/70 transition-all">
-     <div className="bg-green-dark p-4 text-sm shadow">
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 text-white">
-    <div className="flex flex-wrap sm:space-x-6 lg:space-x-8 items-center gap-4">
-      <span className="flex items-center gap-4">
-        <FaMapLocation size={30} />
-        Villa N°4-PTT, Avenue Ahmed Réda Guédira, Rabat, Maroc
-      </span>
-      <span className="flex items-center gap-4">
-        <FaMailBulk size={30} />
-        contact@archivom.com
-      </span>
-      <span className="flex items-center gap-4">
-        <FaPhone size={30} />
-        +212 6 61 82 00 00
-      </span>
-    </div>
-    <div className="flex flex-wrap justify-end gap-4 items-center">
-      <a
-        href="https://www.facebook.com/p/Archivom-100069088126712/?locale=fa_IR"
-        target="_blank"
-        className="text-white hover:text-gray-400 transition-colors"
-      >
-        <FaFacebook size={30} />
-      </a>
-      <a
-        href="https://www.linkedin.com/company/archivom/"
-        target="_blank"
-        className="text-white hover:text-gray-400 transition-colors"
-      >
-        <FaLinkedin size={30} />
-      </a>
-    </div>
-  </div>
-</div>
+    <header className="dark:bg-dark/70 transition-all">
+    <div className="bg-green-dark text-white py-3 px-6 shadow-md">
+      <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center text-sm">
+        {/* Contact Info */}
+        <div className="flex flex-wrap items-center gap-4 sm:gap-6 lg:gap-8">
+          <span className="flex items-center gap-2">
+            <FaMapMarkerAlt size={20} />
+            Villa N°4-PTT, Avenue Ahmed Réda Guédira, Rabat, Maroc
+          </span>
+          <span className="flex items-center gap-2">
+            <FaMailBulk size={20} />
+            <a href="mailto:contact@archivom.com" className="hover:text-gray-300 transition">
+              contact@archivom.com
+            </a>
+          </span>
+          <span className="flex items-center gap-2">
+            <FaPhone size={20} />
+            <a href="tel:+212661820000" className="hover:text-gray-300 transition">
+              +212 6 61 82 00 00
+            </a>
+          </span>
+        </div>
 
+        {/* Social Icons */}
+        <div className="flex items-center gap-4">
+          <a href="https://www.facebook.com/p/Archivom-100069088126712/?locale=fa_IR" target="_blank" rel="noopener noreferrer"
+            className="hover:text-gray-400 transition-colors">
+            <FaFacebook size={25} />
+          </a>
+          <a href="https://www.linkedin.com/company/archivom/" target="_blank" rel="noopener noreferrer"
+            className="hover:text-gray-400 transition-colors">
+            <FaLinkedin size={25} />
+          </a>
+          
+        </div>
+      </div>
+    </div>
 
-      <div className="bg-white dark:bg-dark">
-        <div className="container mx-auto">
+      <div className=" bg-white dark:bg-dark">
+        <div className=" container mx-auto">
           <div className="relative -mx-4 flex items-center justify-between">
             <div className="w-60 max-w-full px-4">
-              <Link to="/" className="block w-full py-5">
+              <Link to="/" className="block w-full py-5 bg-white">
                 <img
                   src="https://archivom.fr/wp-content/uploads/2023/04/lastArchivom-Logo-Couleur-_17_04_2019-2-1024x359.png"
                   alt="logo"
@@ -123,46 +125,41 @@ function Header() {
                           <div className="grid gap-5 lg:grid-cols-3">
                             <div>
                               <div className="space-y-2">
-                                <Link to="/telecommunications">
+                                <Link to="/Telecommunication">
                                   <MegaMenuItem
                                     icon={<FaGraduationCap />}
                                     title="Télécommunications"
-                                    description="Télécommunications services"
                                   />
                                 </Link>
                                 <Link to="/consulting">
                                   <MegaMenuItem
                                     icon={<FaPuzzlePiece />}
-                                    title="Etude et Conseil"
-                                    description="Consulting services for your business"
+                                    title="Etude et Conseil
+"
                                   />
                                 </Link>
                                 <Link to="/physical-archiving">
                                   <MegaMenuItem
                                     icon={<FaRocket />}
                                     title="Archivage Physique"
-                                    description="Physical archiving solutions"
                                   />
                                 </Link>
                                 <Link to="/electronic-archiving">
                                   <MegaMenuItem
                                     icon={<FaRocket />}
                                     title="Archivage Electronique"
-                                    description="Electronic archiving solutions"
                                   />
                                 </Link>
                                 <Link to="/training">
                                   <MegaMenuItem
                                     icon={<FaRocket />}
                                     title="Formation"
-                                    description="Training for businesses and individuals"
                                   />
                                 </Link>
                                 <Link to="/remote-work">
                                   <MegaMenuItem
                                     icon={<FaRocket />}
                                     title="Travail à distance"
-                                    description="Remote work solutions"
                                   />
                                 </Link>
                               </div>
@@ -220,13 +217,12 @@ function Header() {
 }
 
 // eslint-disable-next-line react/prop-types
-function MegaMenuItem({ icon, title, description }) {
+function MegaMenuItem({ icon, title }) {
   return (
     <div className="flex items-center space-x-2 text-sm text-dark dark:text-white">
       <div className="p-2 text-2xl text-primary">{icon}</div>
       <div>
         <h4 className="font-semibold">{title}</h4>
-        <p>{description}</p>
       </div>
     </div>
   );

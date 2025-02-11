@@ -33,7 +33,7 @@ function Hero() {
           
           </ul>
           <div className="clients pt-16">
-            <h6 className="mb-6 flex items-center text-xs font-normal text-body-color dark:text-dark-6">
+            <h6 className="mb-6 flex items-center text-lg text-body-color dark:text-dark-6">
               Some Of Our Clients
               <span className="ml-3 inline-block h-px w-8 bg-body-color" />
             </h6>
@@ -172,7 +172,8 @@ function Hero() {
                     />
                   </svg>
                 </button>
-              </div>
+              </div>Some Of Our Clients
+
               {videoOpen && (
                 <div className="absolute inset-0 bg-black bg-opacity-50 z-50">
                   <iframe
