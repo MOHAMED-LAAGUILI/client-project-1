@@ -174,7 +174,7 @@ export default function Layout({
       <div className="fixed bottom-5 right-5 space-y-5 z-50">
         {/* WhatsApp Icon */}
         <a
-          href="https://wa.me/yourphoneNumber"
+          href="https://web.whatsapp.com/send?phone=212661820000"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -185,7 +185,7 @@ export default function Layout({
 
         {/* Phone Icon */}
         <a
-          href="tel:+yourPhoneNumber"
+          href="tel:+212661820000"
           target="_blank"
           rel="noopener noreferrer"
         >
