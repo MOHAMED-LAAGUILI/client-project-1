@@ -1,7 +1,26 @@
+import Layout from "../Components/layout/Layout";
+
 function References() {
     return (
-      <div>
-        <section className="bg-white dark:bg-dark">
+      <Layout
+      title={"References"}
+      description={" Les entreprises qui font confiance à Archivom ont réalisé à quel point il est stratégique de s’appuyer sur un partenaire efficace qui leur permet de se concentrer sur leur cœur de métier, tout en apportant productivité et gains financiers."}
+> 
+        <div className="mt-10 flex flex-wrap">
+            <div className="w-full px-4">
+              <div className="mx-auto mb-[60px] max-w-[520px] text-center lg:mb-20">
+                <span className="mb-2 block text-lg font-semibold text-primary">
+                References
+                </span>
+                <h2 className="mb-4 text-3xl font-bold text-dark sm:text-[40px]/[48px] dark:text-white">
+                References
+                </h2>
+                
+              </div>
+            </div>
+          </div>
+
+           <section className="bg-white dark:bg-dark">
           <div className="container mx-auto text-center">
             <p className="mb-8 text-lg text-body-color dark:text-white">
               Les entreprises qui font confiance à Archivom ont réalisé à quel point il est stratégique de s’appuyer sur un partenaire efficace qui leur permet de se concentrer sur leur cœur de métier, tout en apportant productivité et gains financiers.
@@ -17,7 +36,7 @@ function References() {
             </div>
           </div>
         </section>
-      </div>
+      </Layout>
     );
   }
   

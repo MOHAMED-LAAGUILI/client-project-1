@@ -1,13 +1,17 @@
-import  { useState } from 'react';
+import { useState } from "react";
+import Layout from "../Components/layout/Layout";
 
 function Faqs() {
   const [openFaq1, setOpenFaq1] = useState(false);
   const [openFaq2, setOpenFaq2] = useState(false);
   const [openFaq3, setOpenFaq3] = useState(false);
 
-
   return (
-    <div>
+    <Layout
+      title={"FAQ"}
+      description={"Any Questions About Archivom? Look Here"}
+    >
+      {" "}
       <section className="relative z-20 overflow-hidden bg-white pb-12 pt-20 lg:pb-[90px] lg:pt-[120px] dark:bg-dark">
         <div className="container mx-auto">
           <div className="-mx-4 flex flex-wrap">
@@ -35,7 +39,7 @@ function Faqs() {
                 >
                   <div className="mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg bg-primary/5 text-primary dark:bg-white/5">
                     <svg
-                      className={openFaq1 ? 'rotate-180' : ''}
+                      className={openFaq1 ? "rotate-180" : ""}
                       width={22}
                       height={22}
                       viewBox="0 0 22 22"
@@ -58,9 +62,9 @@ function Faqs() {
                   <div className="faq-content pl-[62px]">
                     <p className="py-3 text-base leading-relaxed text-body-color dark:text-dark-6">
                       It takes 2-3 weeks to get your first blog post ready. That
-                      includes the in-depth research &amp; creation of your monthly
-                      content marketing strategy that we do before writing your
-                      first blog post, Ipsum available.
+                      includes the in-depth research &amp; creation of your
+                      monthly content marketing strategy that we do before
+                      writing your first blog post, Ipsum available.
                     </p>
                   </div>
                 )}
@@ -72,7 +76,7 @@ function Faqs() {
                 >
                   <div className="mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg bg-primary/5 text-primary dark:bg-white/5">
                     <svg
-                      className={openFaq2 ? 'rotate-180' : ''}
+                      className={openFaq2 ? "rotate-180" : ""}
                       width={22}
                       height={22}
                       viewBox="0 0 22 22"
@@ -95,9 +99,9 @@ function Faqs() {
                   <div className="faq-content pl-[62px]">
                     <p className="py-3 text-base leading-relaxed text-body-color dark:text-dark-6">
                       It takes 2-3 weeks to get your first blog post ready. That
-                      includes the in-depth research &amp; creation of your monthly
-                      content marketing strategy that we do before writing your
-                      first blog post, Ipsum available.
+                      includes the in-depth research &amp; creation of your
+                      monthly content marketing strategy that we do before
+                      writing your first blog post, Ipsum available.
                     </p>
                   </div>
                 )}
@@ -109,7 +113,7 @@ function Faqs() {
                 >
                   <div className="mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg bg-primary/5 text-primary dark:bg-white/5">
                     <svg
-                      className={openFaq3 ? 'rotate-180' : ''}
+                      className={openFaq3 ? "rotate-180" : ""}
                       width={22}
                       height={22}
                       viewBox="0 0 22 22"
@@ -132,9 +136,9 @@ function Faqs() {
                   <div className="faq-content pl-[62px]">
                     <p className="py-3 text-base leading-relaxed text-body-color dark:text-dark-6">
                       It takes 2-3 weeks to get your first blog post ready. That
-                      includes the in-depth research &amp; creation of your monthly
-                      content marketing strategy that we do before writing your
-                      first blog post, Ipsum available.
+                      includes the in-depth research &amp; creation of your
+                      monthly content marketing strategy that we do before
+                      writing your first blog post, Ipsum available.
                     </p>
                   </div>
                 )}
@@ -144,7 +148,7 @@ function Faqs() {
           </div>
         </div>
       </section>
-    </div>
+    </Layout>
   );
 }
 

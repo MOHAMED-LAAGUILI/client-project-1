@@ -1,11 +1,16 @@
 import { Link } from "react-router-dom"
+import Layout from "../Components/layout/Layout"
 
 function NotFound() {
   return (
-    <div>
-<section className="relative z-10 bg-primary py-[120px]">
+    <Layout
+    title={"404 NotFound"}
+    description={"Oops! That page can’t be found"}
+  >
+    
+    <section className="relative z-10 bg-primary py-[120px]">
   <div className="container mx-auto">
-    <div className="-mx-4 flex">
+    <div className=" flex">
       <div className="w-full px-4">
         <div className="mx-auto max-w-[400px] text-center">
           <h2 className="mb-2 text-[50px] font-bold leading-none text-white sm:text-[80px] md:text-[100px]">
@@ -34,7 +39,7 @@ function NotFound() {
   </div>
 </section>
 
-    </div>
+    </Layout>
   )
 }
 

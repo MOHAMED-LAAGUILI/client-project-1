@@ -55,14 +55,14 @@ function Footer() {
                     Follow Us On
                   </h4>
                   <div className="mb-6 flex items-center">
-                    <a href="javascript:void(0)" className="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-stroke text-dark hover:border-primary hover:bg-primary hover:text-white sm:mr-4 lg:mr-3 xl:mr-4 dark:border-dark-3 dark:text-white dark:hover:border-primary">
+                    <a href="https://www.linkedin.com/company/archivom/" className="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-stroke text-dark hover:border-primary hover:bg-primary hover:text-white sm:mr-4 lg:mr-3 xl:mr-4 dark:border-dark-3 dark:text-white dark:hover:border-primary">
                      
                                
                              
                                   <FaLinkedin size={30} />
                                 </a>
                     
-                                <a href="javascript:void(0)" className="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-stroke text-dark hover:border-primary hover:bg-primary hover:text-white sm:mr-4 lg:mr-3 xl:mr-4 dark:border-dark-3 dark:text-white dark:hover:border-primary">
+                                <a href="https://www.facebook.com/p/Archivom-100069088126712/?locale=fa_IR" className="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-stroke text-dark hover:border-primary hover:bg-primary hover:text-white sm:mr-4 lg:mr-3 xl:mr-4 dark:border-dark-3 dark:text-white dark:hover:border-primary">
                                   <FaFacebook size={30} />
                                 </a>
                                 <a href="javascript:void(0)" className="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-stroke text-dark hover:border-primary hover:bg-primary hover:text-white sm:mr-4 lg:mr-3 xl:mr-4 dark:border-dark-3 dark:text-white dark:hover:border-primary">

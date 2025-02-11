@@ -41,21 +41,21 @@ function Header() {
     </div>
     <div className="flex flex-wrap justify-end gap-4 items-center">
       <a
-        href="https://facebook.com"
+        href="https://www.facebook.com/p/Archivom-100069088126712/?locale=fa_IR"
         target="_blank"
         className="text-white hover:text-gray-400 transition-colors"
       >
         <FaFacebook size={30} />
       </a>
       <a
-        href="https://twitter.com"
+        href="javascript:void(0)"
         target="_blank"
         className="text-white hover:text-gray-400 transition-colors"
       >
         <FaInstagram size={30} />
       </a>
       <a
-        href="https://linkedin.com"
+        href="https://www.linkedin.com/company/archivom/"
         target="_blank"
         className="text-white hover:text-gray-400 transition-colors"
       >
