@@ -13,21 +13,16 @@ function Hero() {
   return (
     <div>
 
-
-     <div className="relative bg-white pb-[110px] pt-[60px] lg:pt-[50px] dark:bg-dark">
+     <div className="relative bg-white :bg-dark">
   <div className="container mx-auto">
     <div className="-mx-4 flex flex-wrap items-center">
       <div className="w-full px-4 lg:w-5/12">
         <div className="hero-content">
           <h1 className="mb-5 text-4xl font-bold !leading-[1.208] text-dark sm:text-[42px] lg:text-[40px] xl:text-5xl dark:text-white">
-            The Greatest <br />
-            Journey Of Online <br />
-            Payment.
+          Nous accompagnons les entreprises dans leur Transformation Digitale
           </h1>
           <p className="mb-8 max-w-[480px] text-base text-body-color dark:text-dark-6">
-            With TailGrids, business and students thrive together. Business
-            can perfectly match their staffing to changing demand throughout
-            the dayed.
+          Disposant d’une équipe doté d’une expérience de plus de 30 ans, Archivom est une société d’ingénierie et de services de « Gestion de Contenu d’Entreprise » ou en anglais « Entreprise Content Management », qui opère dans la gestion du patrimoine informationnel des entreprises.
           </p>
           <ul className="flex flex-wrap items-center">
             <li>
@@ -130,7 +125,23 @@ function Hero() {
 
 
 
-<section className="bg-white py-20 lg:py-[120px] dark:bg-dark">
+<section className="bg-white py-10 lg:py-[120px] dark:bg-dark">
+<div className="-mx-4 flex flex-wrap">
+      <div className="w-full px-4">
+        <div className="mx-auto mb-12 max-w-[510px] text-center lg:mb-20">
+          <span className="mb-2 block text-lg font-semibold text-primary">
+           About Us
+          </span>
+          <h2 className="mb-3 text-3xl font-bold leading-[1.2] text-dark sm:text-4xl md:text-[40px] dark:text-white">
+          Demo Vid
+          </h2>
+          <p className="text-base text-body-color dark:text-dark-6">
+            There are many variations of passages of Lorem Ipsum available
+            but the majority have suffered alteration in some form.
+          </p>
+        </div>
+      </div>
+    </div>
       <div className="container mx-auto">
         <div className="-mx-4 flex flex-wrap justify-center">
           <div className="w-full px-4 lg:w-10/12">

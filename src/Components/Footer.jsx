@@ -1,9 +1,9 @@
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin, FaPhone } from "react-icons/fa";
 
 function Footer() {
     return (
       <div>
-        <footer className="relative z-10 bg-white pb-10 pt-20 lg:pb-20 lg:pt-[120px] dark:bg-dark">
+        <footer className="relative z-1 bg-white pb-10 pt-20 lg:pb-20 lg:pt-[120px] dark:bg-dark shadow-lg border mt-5">
           <div className="container mx-auto">
             <div className="-mx-4 flex flex-wrap">
               <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
@@ -17,9 +17,7 @@ function Footer() {
                   </p>
                   <p className="flex items-center text-sm font-medium text-dark dark:text-white">
                     <span className="mr-3 text-primary">
-                      <svg width={20} height={20} viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        {/* SVG content */}
-                      </svg>
+<FaPhone size={30} />
                     </span>
                     <span>+212 6 61 82 00 00</span>
                   </p>

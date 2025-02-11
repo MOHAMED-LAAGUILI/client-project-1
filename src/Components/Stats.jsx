@@ -2,8 +2,26 @@ import statsbg from "../assets/images/stats.svg"
 function Stats() {
   return (
     <div>
+      <div className="-mx-4 flex flex-wrap">
+      <div className="w-full px-4">
+        <div className="mx-auto mb-12 max-w-[510px] text-center lg:mb-20">
+          <span className="mb-2 block text-lg font-semibold text-primary">
+            Our Stats
+          </span>
+          <h2 className="mb-3 text-3xl font-bold leading-[1.2] text-dark sm:text-4xl md:text-[40px] dark:text-white">
+          Stats
+          </h2>
+          <p className="text-base text-body-color dark:text-dark-6">
+            There are many variations of passages of Lorem Ipsum available
+            but the majority have suffered alteration in some form.
+          </p>
+        </div>
+      </div>
+    </div>
         <section className="relative z-10 overflow-hidden bg-primary py-24">
+          
   <div className="mx-auto px-4 sm:container">
+    
     <div className="-mx-4 flex flex-wrap justify-center">
       <div className="w-full px-4 md:w-1/2 lg:w-1/3">
         <div className="mx-auto mb-10 max-w-[325px] text-center lg:mb-0">
