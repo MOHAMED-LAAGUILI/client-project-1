@@ -8,7 +8,6 @@ import {
   FaLinkedin,
   FaMailBulk,
   FaPhone,
-  FaInstagram,
   FaServicestack,
   FaHome,
   FaDochub,
@@ -48,13 +47,6 @@ function Header() {
         <FaFacebook size={30} />
       </a>
       <a
-        href="javascript:void(0)"
-        target="_blank"
-        className="text-white hover:text-gray-400 transition-colors"
-      >
-        <FaInstagram size={30} />
-      </a>
-      <a
         href="https://www.linkedin.com/company/archivom/"
         target="_blank"
         className="text-white hover:text-gray-400 transition-colors"
@@ -74,12 +66,7 @@ function Header() {
                 <img
                   src="https://archivom.fr/wp-content/uploads/2023/04/lastArchivom-Logo-Couleur-_17_04_2019-2-1024x359.png"
                   alt="logo"
-                  className="dark:hidden"
-                />
-                <img
-                  src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo-white.svg"
-                  alt="logo"
-                  className="hidden dark:block"
+                  className=""
                 />
               </Link>
             </div>

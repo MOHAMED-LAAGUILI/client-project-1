@@ -13,12 +13,12 @@ function Hero() {
   return (
     <div>
 
-     <div className="relative bg-white :bg-dark">
+     <div className="relative bg-white dark:bg-dark">
   <div className="container mx-auto">
     <div className="-mx-4 flex flex-wrap items-center">
       <div className="w-full px-4 lg:w-5/12">
         <div className="hero-content">
-          <h1 className="mb-5 text-4xl font-bold !leading-[1.208] text-dark sm:text-[42px] lg:text-[40px] xl:text-5xl dark:text-white">
+          <h1 className=" dark:text-dark-6 mb-5 text-4xl font-bold !leading-[1.208] text-dark sm:text-[42px] lg:text-[40px] xl:text-5xl dark:text-white">
           Nous accompagnons les entreprises dans leur Transformation Digitale
           </h1>
           <p className="mb-8 max-w-[480px] text-base text-body-color dark:text-dark-6">

@@ -9,8 +9,7 @@ function Footer() {
               <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
                 <div className="mb-10 w-full">
                   <a href="javascript:void(0)" className="mb-6 inline-block max-w-[160px]">
-                    <img src="https://archivom.fr/wp-content/uploads/2023/04/lastArchivom-Logo-Couleur-_17_04_2019-2-1024x359.png" alt="logo" className="max-w-full dark:hidden" />
-                    <img src="https://archivom.fr/wp-content/uploads/2023/04/lastArchivom-Logo-Couleur-_17_04_2019-2-1024x359.png" alt="logo" className="hidden max-w-full dark:block" />
+                    <img src="https://archivom.fr/wp-content/uploads/2023/04/lastArchivom-Logo-Couleur-_17_04_2019-2-1024x359.png" alt="logo" className="max-w-full" />
                   </a>
                   <p className="mb-7 text-base text-body-color dark:text-dark-6">
                     Villa N°4-PTT, Avenue Ahmed Réda Guédira, Rabat, Maroc
